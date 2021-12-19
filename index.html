@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>ABC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="pwa/icon-192x192.png" />
+</head>
+
+<body>
+    <div class="header">ABC Game</div>
+    <div class="description">לחץ על האות הנכונה לפי הקול</div>
+    <div class="level-box">
+        <div class="buttons">
+           <button onclick="initGame(false)">START ABC</button>
+           <button onclick="initGame(true)">START abc</button>
+        </div>
+    </div>
+    <div class = "data-div">
+        <ul class="data-ul">
+            <li class="play-button" onclick="playAudio()"><span>&#9658;</span></li>
+            <li class="time">Time:</li>
+        </ul>
+    </div>
+    <hr>
+    <div class="win-placeholder time">כל הכבוד</div>
+    <table border="1" cellpadding="10">
+        <tbody class="board">
+
+        </tbody>
+    </table>
+    <tbody class="board"></tbody>
+    </table>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
